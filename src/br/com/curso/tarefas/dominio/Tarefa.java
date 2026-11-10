@@ -79,6 +79,10 @@ public abstract class Tarefa implements Priorizavel {
     public String obterTitulo() {
         return titulo;
     }
+
+    public String obterDescricao() {
+        return descricao;
+    }
     
     public int obterEstimativaHoras() {
         return estimativaHoras;
