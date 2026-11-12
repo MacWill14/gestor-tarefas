@@ -42,6 +42,18 @@ public class GestorTarefas {
         return maiorPrioridade;
     }
 
+    public int contarPendentes() {
+        int quantidade = 0;
+
+        for (Tarefa tarefa : tarefas) {
+            if (tarefa.estaPendente()) {
+                quantidade++;
+            }
+        }
+
+        return quantidade;
+    }
+
     public void iniciarTarefasPendentes() {
         for (Tarefa tarefa : tarefas) {
             if (tarefa.estaPendente()) {
